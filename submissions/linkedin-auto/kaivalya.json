@@ -36,10 +36,10 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        -416,
-        1104
+        -1504,
+        688
       ],
-      "id": "74c186cb-f23e-478d-b096-473aee9a2f5c",
+      "id": "aa9b6cce-b286-4de4-8379-6147f8a5893c",
       "name": "Configure Post Settings"
     },
     {
@@ -177,10 +177,10 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.2,
       "position": [
-        64,
-        1072
+        -1024,
+        656
       ],
-      "id": "4d04e893-7121-4901-aea7-ada07a2f84c6",
+      "id": "0975aad7-3fcd-473b-8445-02e91f46ee9f",
       "name": "Smart Content Router"
     },
     {
@@ -197,10 +197,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        1088,
-        416
+        0,
+        0
       ],
-      "id": "9e2b2b26-65ea-42f0-8b6c-6e8f2ca74294",
+      "id": "a28844e5-45bd-408b-84a6-f42cb287da40",
       "name": "Text Post"
     },
     {
@@ -211,16 +211,16 @@
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={\n    \"author\": \"urn:li:person:{{ $json.sub }}\",\n    \"lifecycleState\": \"PUBLISHED\",\n    \"specificContent\": {\n        \"com.linkedin.ugc.ShareContent\": {\n            \"shareCommentary\": {\n                \"text\": \"Learning more about LinkedIn by reading the LinkedIn Blog!\"\n            },\n            \"shareMediaCategory\": \"ARTICLE\",\n            \"media\": [\n                {\n                    \"status\": \"READY\",\n                    \"description\": {\n                        \"text\": \"Now you can Automate All Instagram Post\"\n                    },\n                    \"originalUrl\": \"https://youtu.be/t63IlcH1GJY?si=V94VitNWyNNvk7WR\",\n                    \"title\": {\n                        \"text\": \"Automate All Instagram Post\"\n                    }\n                }\n            ]\n        }\n    },\n    \"visibility\": {\n        \"com.linkedin.ugc.MemberNetworkVisibility\": \"PUBLIC\"\n    }\n}",
+        "jsonBody": "={\n    \"author\": \"urn:li:person:{{ $json.sub }}\",\n    \"lifecycleState\": \"PUBLISHED\",\n    \"specificContent\": {\n        \"com.linkedin.ugc.ShareContent\": {\n            \"shareCommentary\": {\n                \"text\": \"Learning more about LinkedIn by reading the LinkedIn Blog!\"\n            },\n            \"shareMediaCategory\": \"ARTICLE\",\n            \"media\": [\n                {\n                    \"status\": \"READY\",\n                    \"description\": {\n                        \"text\": \"Now you can Automate All Instagram Post\"\n                    },\n                    \"title\": {\n                        \"text\": \"Automate All Instagram Post\"\n                    }\n                }\n            ]\n        }\n    },\n    \"visibility\": {\n        \"com.linkedin.ugc.MemberNetworkVisibility\": \"PUBLIC\"\n    }\n}",
         "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        1152,
-        784
+        64,
+        368
       ],
-      "id": "9dff79f6-3b71-412c-9f92-50f6f9b7ad6d",
+      "id": "4c53fa94-88c3-42ad-bd81-66ad09b15c9c",
       "name": "Article Post"
     },
     {
@@ -231,16 +231,16 @@
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={\n    \"author\": \"urn:li:person:{{ $json.sub }}\",\n    \"lifecycleState\": \"PUBLISHED\",\n    \"specificContent\": {\n        \"com.linkedin.ugc.ShareContent\": {\n            \"shareCommentary\": {\n                \"text\": \"Let's Automate All Instagram Post Type\"\n            },\n            \"shareMediaCategory\": \"ARTICLE\",\n            \"media\": [\n                {\n                    \"status\": \"READY\",\n                    \"description\": {\n                        \"text\": \"Now you can Automate All Instagram Post\"\n                    },\n                    \"originalUrl\": \"https://youtu.be/t63IlcH1GJY?si=V94VitNWyNNvk7WR\",\n                    \"title\": {\n                        \"text\": \"Automate All Instagram Post\"\n                    },\n                    \"thumbnails\": [{\n                        \"url\": \"https://i.ytimg.com/vi/t63IlcH1GJY/hq720.jpg\"\n                    }]\n                }\n            ]\n        }\n    },\n    \"visibility\": {\n        \"com.linkedin.ugc.MemberNetworkVisibility\": \"PUBLIC\"\n    }\n}",
+        "jsonBody": "={\n    \"author\": \"urn:li:person:{{ $json.sub }}\",\n    \"lifecycleState\": \"PUBLISHED\",\n    \"specificContent\": {\n        \"com.linkedin.ugc.ShareContent\": {\n            \"shareCommentary\": {\n                \"text\": \"Let's Automate All Instagram Post Type\"\n            },\n            \"shareMediaCategory\": \"ARTICLE\",\n            \"media\": [\n                {\n                    \"status\": \"READY\",\n                    \"description\": {\n                        \"text\": \"Now you can Automate All Instagram Post\"\n                    },\n                    \"title\": {\n                        \"text\": \"Automate All Instagram Post\"\n                    }\n                }\n            ]\n        }\n    },\n    \"visibility\": {\n        \"com.linkedin.ugc.MemberNetworkVisibility\": \"PUBLIC\"\n    }\n}",
         "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        1088,
-        1200
+        0,
+        784
       ],
-      "id": "a24f9f12-903d-4908-82b6-c9c145a4f2d9",
+      "id": "d0b8dc68-da62-48e5-a82a-2c7e817d5e5e",
       "name": "Article with Image"
     },
     {
@@ -257,10 +257,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        944,
-        1424
+        -144,
+        1008
       ],
-      "id": "4de9f2a4-e1f8-44b0-96cf-bad67b2e564c",
+      "id": "e67f602f-9876-417a-ae9e-7dd4223f2977",
       "name": "Register Image Upload"
     },
     {
@@ -277,10 +277,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        880,
-        1872
+        -208,
+        1456
       ],
-      "id": "a6850efc-5672-4fae-a872-dffe2661a34a",
+      "id": "6673fe55-e7b9-4e25-9243-50ea0a43b68a",
       "name": "Register Video Upload"
     },
     {
@@ -297,10 +297,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        1360,
-        1424
+        272,
+        1008
       ],
-      "id": "5d0892b8-b331-4c28-a3c1-5e3e03b7673d",
+      "id": "ca9fe271-e822-46cb-83ad-0da234d794b6",
       "name": "Upload Image File"
     },
     {
@@ -321,10 +321,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        1552,
-        1440
+        464,
+        1024
       ],
-      "id": "a3d6d9ad-1cde-4e64-9714-5c73188f21b6",
+      "id": "3ab0f45f-4e9d-4c70-b6df-60d74367602c",
       "name": "Linkedin Image Post"
     },
     {
@@ -335,10 +335,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        1088,
-        1872
+        0,
+        1456
       ],
-      "id": "eec1a205-bb51-4e37-98be-64765c0a8d48",
+      "id": "62063793-f6ca-4e0c-a74c-7e2f342344b4",
       "name": "Download Video"
     },
     {
@@ -355,10 +355,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        1328,
-        1872
+        240,
+        1456
       ],
-      "id": "d488e278-9648-4d6b-af45-38158d57c5e6",
+      "id": "ffd05dbe-4c05-4a9b-bf9f-d7d2dac65ee6",
       "name": "Upload Video File"
     },
     {
@@ -379,10 +379,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        1520,
-        1872
+        432,
+        1456
       ],
-      "id": "01ac55cb-7be0-4a32-a511-900e94a1fe11",
+      "id": "ca3cdeba-587b-4b20-9a79-2f5f77585ca9",
       "name": "Linkedin Video Post"
     },
     {
@@ -393,51 +393,44 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        1152,
-        1424
+        64,
+        1008
       ],
-      "id": "ea16b3a4-dbd3-4df1-997b-9c6d21e5e8eb",
+      "id": "a77b43ff-e2ad-4fea-a3ca-a207538a28d5",
       "name": "Download Image"
     },
     {
       "parameters": {
-        "person": "G6aRAYc0M_",
+        "person": "",
         "text": "Automated post",
         "additionalFields": {}
       },
       "type": "n8n-nodes-base.linkedIn",
       "typeVersion": 1,
       "position": [
-        1168,
-        608
+        80,
+        192
       ],
-      "id": "7924ae93-4632-429f-bafe-9177b71dd907",
-      "name": "Text Post Linkedin",
-      "credentials": {
-        "linkedInOAuth2Api": {
-          "id": "8uTJ8CqWn1xx20pa",
-          "name": "LinkedIn account"
-        }
-      }
+      "id": "f7d2546d-7017-47b7-8a7c-278fc5aa2a91",
+      "name": "Text Post Linkedin"
     },
     {
       "parameters": {
-        "person": "QyGjon0PYg",
+        "person": "",
         "text": "Automated post",
         "shareMediaCategory": "ARTICLE",
         "additionalFields": {
           "description": "Now you can Automate All Instagram Post",
-          "originalUrl": "https://youtu.be/t63IlcH1GJY?si=V94VitNWyNNvk7WR",
           "title": "Automate All Instagram Post"
         }
       },
       "type": "n8n-nodes-base.linkedIn",
       "typeVersion": 1,
       "position": [
-        1088,
-        944
+        0,
+        528
       ],
-      "id": "029d93cb-c5d4-49fa-9262-23d54e271fd5",
+      "id": "ebc12ee4-a4c4-46ce-84aa-a5e9cf847b3f",
       "name": "Text Post Linkedin1"
     },
     {
@@ -468,10 +461,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        672,
-        528
+        -416,
+        112
       ],
-      "id": "a8c53ff9-ed82-461c-83dc-bb6a0f1141e0",
+      "id": "5dc361cb-c25f-49ea-ad6c-aca13ef70fe2",
       "name": "Text If"
     },
     {
@@ -502,15 +495,15 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        672,
-        896
+        -416,
+        480
       ],
-      "id": "4e6a4797-e1e5-49c9-95bc-cd6fc69df3dc",
+      "id": "ff10914f-1e2f-4b2a-9c79-2d4bc2d8e000",
       "name": "Article if"
     },
     {
       "parameters": {
-        "person": "QyGjon0PYg",
+        "person": "",
         "text": "Automated post",
         "shareMediaCategory": "IMAGE",
         "additionalFields": {
@@ -520,10 +513,10 @@
       "type": "n8n-nodes-base.linkedIn",
       "typeVersion": 1,
       "position": [
-        1120,
-        1600
+        32,
+        1184
       ],
-      "id": "20d70a3f-4015-4f73-9b12-5410e70a07a7",
+      "id": "1dd752e0-0ef2-4da6-9224-478dc45e3663",
       "name": "Image Post Linkedin"
     },
     {
@@ -534,10 +527,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        880,
-        1600
+        -208,
+        1184
       ],
-      "id": "784f5885-528b-410e-928a-e3dd8ebb4683",
+      "id": "38f25b23-7412-475d-9a6d-5ab075a47fcc",
       "name": "Download Imagee"
     },
     {
@@ -550,10 +543,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        784,
-        1120
+        -304,
+        704
       ],
-      "id": "db76c958-38e1-45be-87d3-b7705118be02",
+      "id": "c1035f44-1ac1-4347-8b5d-9e08a2b51711",
       "name": "Get UserID4"
     },
     {
@@ -566,10 +559,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        752,
-        1440
+        -336,
+        1024
       ],
-      "id": "4901f5ff-8106-48d6-ba74-0cd577621162",
+      "id": "863e1a7b-5aa1-417b-aa79-95b4816526f9",
       "name": "Get UserID5"
     },
     {
@@ -582,10 +575,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        624,
-        1872
+        -464,
+        1456
       ],
-      "id": "b520fb04-538c-499d-a534-c27ef1c909bb",
+      "id": "93a17632-4d3b-41aa-b8cc-34ae66f8c06a",
       "name": "Get UserID6"
     },
     {
@@ -593,10 +586,10 @@
       "type": "n8n-nodes-base.manualTrigger",
       "typeVersion": 1,
       "position": [
-        -736,
-        1104
+        -1824,
+        688
       ],
-      "id": "91df3015-301e-4caf-a98e-cc520f869a2d",
+      "id": "3cdca7b0-e3e3-44f6-9087-ceee9c1df84c",
       "name": "When clicking ‘Execute workflow’"
     },
     {
@@ -627,10 +620,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        560,
-        1504
+        -528,
+        1088
       ],
-      "id": "b41deaf0-e311-477b-b36d-a4f8789f2a7a",
+      "id": "2e591471-d4ae-431e-bfc6-76aff782e195",
       "name": "Image if"
     }
   ],
@@ -867,18 +860,11 @@
     "executionOrder": "v1",
     "binaryMode": "separate"
   },
-  "versionId": "a9a44358-44a9-4b7a-b8ff-c88505a7ea67",
+  "versionId": "84756c6b-3139-4edc-bcb9-9407b202762f",
   "meta": {
     "instanceId": "284aa7c00ccc98dc9d2f878c7686ec87258fa8bcf35dc30f3ca675bf02c62c00"
   },
   "nodeGroups": [],
-  "id": "SaJXDqfs2LlKCs9A",
-  "tags": [
-    {
-      "name": "youtube",
-      "id": "E4vH1DjeO0Em1w8C",
-      "updatedAt": "2026-09-18T17:53:05.818Z",
-      "createdAt": "2026-09-18T17:53:05.818Z"
-    }
-  ]
+  "id": "z75VRQSEr5BB60o7",
+  "tags": []
 }
